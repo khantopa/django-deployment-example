@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {%block title %} Relative {%  endblock %}
+  {% block body_block %}
+
+    <h1>Welcome to RELATIVE URL TEMPLATES</h1>
+    <h3>This is an example of Template inheritance</h3>
+
+    <a href="{% url 'basic_app:other' %}">The Other Page</a>
+    <a href="{% url 'admin:index' %}">Admin</a>
+    <a href="{% url 'index' %}">Home page</a>
+
+
+  {% endblock %}
